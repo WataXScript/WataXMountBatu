@@ -218,6 +218,7 @@ local lastKey = loadKey()
 if lastKey and isKeyValid(lastKey) then
     print("Auto login berhasil, key valid:", lastKey)
     mainFrame.Visible = false
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountBatu/main/Loader/fix.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountBatu/main/Loader/WataX.lua"))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountBatu/main/Loader/mainmap498.lua"))()
 end
@@ -229,6 +230,7 @@ submitBtn.MouseButton1Click:Connect(function()
         saveKey(inputKey)
         print("Key benar:", inputKey)
         mainFrame.Visible = false
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountBatu/main/Loader/fix.lua"))()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountBatu/main/Loader/WataX.lua"))()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/WataXScript/WataXMountBatu/main/Loader/mainmap498.lua"))()
     else
